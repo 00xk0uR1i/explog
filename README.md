@@ -1,8 +1,8 @@
 # Created By k0ur1i
-WP ExploitScanner
-WP Exploit Scanner is a multi-functional tool for scanning, detecting, and exploiting vulnerabilities in WordPress websites. It integrates multiple features such as Shodan and ZoomEye queries, Nuclei scanning, and auto-exploitation. Additionally, it allows users to import custom Python exploit scripts for dynamic execution.
+#WP ExploitScanner
+#WP Exploit Scanner is a multi-functional tool for scanning, detecting, and exploiting vulnerabilities in WordPress websites. It integrates multiple features such as Shodan and #ZoomEye queries, Nuclei scanning, and auto-exploitation. Additionally, it allows users to import custom Python exploit scripts for dynamic execution.
 
-Features
+#Features
 WordPress Vulnerability Scanning: Detect vulnerabilities in WordPress sites using APIs and known methods.
 Shodan Integration: Search for WordPress-related systems using the Shodan API.
 ZoomEye Integration: Query ZoomEye for WordPress-related systems.
@@ -30,7 +30,7 @@ python k0ur1iScan.py --help
 Usage
 General Syntax
 python k0ur1iScan.py [OPTIONS]
-Options
+#Options
 --target: Specify the target WordPress site URL.
 --shodan: Perform a Shodan search for WordPress-related systems.
 --zoomeye: Perform a ZoomEye search for WordPress-related systems.
@@ -41,30 +41,30 @@ Examples
 Scan a WordPress site for vulnerabilities:
 python k0ur1iScan.py --target "http://example.com"
 Perform a Shodan search for WordPress sites:
-python k0ur1iScan.py --shodan
-Scan with Nuclei:
-python k0ur1iScan.py --target "http://example.com" --nuclei
-Automatically exploit vulnerabilities:
-python k0ur1iScan.py --target "http://example.com" --exploit
-Import and run a custom exploit script:
-python k0ur1iScan.py --target "http://example.com" --import-exploit "/path/to/exploit.py"
-Example Exploit Script
-def run_exploit(target):
-    print(f"Running custom exploit on {target}")
-    response = requests.get(f"{target}/vulnerable_endpoint")
-    if response.status_code == 200:
-        print(f"Exploit succeeded! Response: {response.text}")
-    else:
-        print("Exploit failed.")
-Ethical Usage
-This tool is intended for ethical use only. Unauthorized testing or exploitation is illegal and may result in severe consequences. Use it only on systems you own or have explicit permission to test.
+#python k0ur1iScan.py --shodan
+#Scan with Nuclei:
+#python k0ur1iScan.py --target "http://example.com" --nuclei
+#Automatically exploit vulnerabilities:
+#python k0ur1iScan.py --target "http://example.com" --exploit
+#Import and run a custom exploit script:
+#python k0ur1iScan.py --target "http://example.com" --import-exploit "/path/to/exploit.py"
+#Example Exploit Script
+#def run_exploit(target):
+#    print(f"Running custom exploit on {target}")
+#    response = requests.get(f"{target}/vulnerable_endpoint")
+#    if response.status_code == 200:
+ #       print(f"Exploit succeeded! Response: {response.text}")
+#    else:
+#        print("Exploit failed.")
+#Ethical Usage
+#This tool is intended for ethical use only. Unauthorized testing or exploitation is illegal and may result in severe consequences. Use it only on systems you own or have #explicit permission to test.
 
 License
 This project is licensed under the MIT License.
 
-Author
-00xk0uR1i
-#
+#Author
+#00xk0uR1i
+
 #
 #
 #
